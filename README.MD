@@ -23,13 +23,13 @@ This package generates a unique ID/String for different browsers. Like chrome, F
 
 > The algorithms used to encrypt/decrypt data - `murmurhash3_32_gc`, `cyrb53` and `javaHashCode`. Code is inside `.src/code/EncryptDecrypt.js`.
 
-## :hear_no_evil:  What's all the hullabaloo?  
+## :hear_no_evil:  What's all the hullabaloo?
 <a href="https://broprintjs.netlify.app/" target="_blank">Broprint.js</a> helps JavaScript developers code visitors identifier more simply, readably, and securely. Whether you need to find a unique visitor, do analytics, browser fingerprinting, or do anything of the like while even preventing frauds, we've got you covered at a **cryptographically strong** level. The best part? Our library is extremely lightweight and developer friendly- which means it won't take a toll on your project, and it's uber-simple to implement. This library works on the concept of **canvas** fingerprint and **audio** fingerprint, the final result which a user get is the combination of **audio and canvas fingerprint**. We are using **cryptojs** under the hood for encryptions but you can easily tweek the library to remove the dependency.  <br/><br/><br/>
 </br>
 
-## :zap:  Fast implementation  
+## :zap:  Fast implementation
    **Step 1:** Install using npm or yarn:<br/>
-  
+
 Using npm:
 ```JavaScript
 //Install:
@@ -41,7 +41,7 @@ Using Yarn:
 yarn add @rajesh896/broprint.js
 ```
 <br/><br/>
-## :tada:  Examples  
+## :tada:  Examples
 >### **In Reactjs**
 ```javascript
 import { getCurrentBrowserFingerPrint } from "@rajesh896/broprint.js";
@@ -71,7 +71,7 @@ getCurrentBrowserFingerPrint().then((fingerprint) => {
 
 <body>
     <script type="module">
-        import("./node_modules/@rajesh896/broprint.js/index.js").then((module) => {
+        import("./node_modules/@rajesh896/broprint.js/lib/index.js").then((module) => {
             module.getCurrentBrowserFingerPrint().then((fingerprint) => {
                 console.log(fingerprint);
             })
@@ -82,7 +82,7 @@ getCurrentBrowserFingerPrint().then((fingerprint) => {
 </html>
 ```
 
-- From version `1.1.0` onwards we have a dependency `crypto-js`. If you do not want to have this dependency then use the earlier versions of this library. 
+- From version `1.1.0` onwards we have a dependency `crypto-js`. If you do not want to have this dependency then use the earlier versions of this library.
 
 If you want to use it in simple `.html` file, please read the `index.html` file in the root directory.
 
